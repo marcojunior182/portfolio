@@ -25,3 +25,23 @@ body {
     font-weight: bold;
 
 }
+
+.terminal {
+    padding: 2% 2% 2% 2%;
+    border: 2px solid lightgray;
+    padding: 10px;
+    font-family: monospace;
+    width: 90%; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
+    overflow: auto;
+}
+
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        visibility: hidden;
+    }
+}
