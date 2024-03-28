@@ -21,7 +21,7 @@ function typeText() {
         setTimeout(typeText, 100);
     } else if (phase === 2 && index < additionalText.length) {
         let arrowElement = document.createElement("span");
-        arrowElement.style.color = "blue";
+        arrowElement.style.color = "orange";
         arrowElement.innerHTML = additionalText.charAt(index);
         document.getElementById("typed-text").appendChild(arrowElement);
         index++;
