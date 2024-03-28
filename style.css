@@ -1,12 +1,29 @@
 body {
     background-color: black;
     color: green;
+    font-weight: bold;
+    
 }
 
 #presentation {
     padding: 2% 2% 2% 2%;
 }
 
+.image-container {
+    position: relative;
+}
+
+.linkedin-icon {
+    position: relative;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+}
+
+.icon-size {
+    width: 50px; /* Define a largura do ícone */
+    height: 50px; /* Define a altura do ícone */
+}
+
 #computer-simulator{
-    
+
 }
