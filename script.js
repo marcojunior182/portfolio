@@ -13,24 +13,24 @@ function typeText() {
     if (phase === 1 && index < mainText.length) {
         document.getElementById("typed-text").innerHTML += mainText.charAt(index);
         index++;
-        setTimeout(typeText, 100); // Adjust the typing speed by changing the timeout value
+        setTimeout(typeText, 25); // Adjust the typing speed by changing the timeout value
     } else if (phase === 1 && index === mainText.length) {
         document.getElementById("typed-text").innerHTML += "<br><br>";
         index = 0;
         phase = 2;
-        setTimeout(typeText, 100);
+        setTimeout(typeText, 25);
     } else if (phase === 2 && index < additionalText.length) {
         let arrowElement = document.createElement("span");
         arrowElement.style.color = "orange";
         arrowElement.innerHTML = additionalText.charAt(index);
         document.getElementById("typed-text").appendChild(arrowElement);
         index++;
-        setTimeout(typeText, 100);
+        setTimeout(typeText, 25);
     } else if (phase === 2 && index === additionalText.length) {
         document.getElementById("typed-text").innerHTML += portfolioText;
         index = 0;
         phase = 3;
-        setTimeout(typeText, 100);
+        setTimeout(typeText, 25);
     } else if (phase === 3 && index < linkText.length) {
         let linkElement = document.createElement("a");
         linkElement.href = linkText;
